@@ -1,0 +1,42 @@
+<h1> CSS: part 2 </h1>
+
+<h2> Position </h2>
+<ul id="position"> 
+  <li id="static"> <strong> Static: </strong> default: stays where it's at. Adding values to top/bottom/L/R have no effect. <li>
+  <li id="relative"> Relative: moves relative to it's original space in the document. Holds its original space available</li>
+  <li id="absolute"> <strong> Absolute: </strong> element is removed from the normal flow and no space is created for the element. It is positioned relative to it's closest positioned (aka not set to 'static') ansestor. If not element is positioned, it will be relative to the body.</li>
+  <li id="fixed"><strong>Fixed: </strong> Removed from flow; no space created for it. Positioned relative to initial containing block (ie-body). It stays here. Often used for Nav bars. </li>
+  <li id="sticky"> <strong> sticky: </strong> Starts at original spot, but when scroll down, ends up positioned relative to initial to containing block. **For some reason, it's not working!!** </li> 
+</ul>
+
+<h2> Box model </h2>
+<div class="borders"> <h3>  Borders</h3> Width, style, color, border radius (to round corners or make a circle).  Can specify separately or all at once. <br> <strong> Shorthand: </strong> border: 30px solid grey with <strong> width style color </strong> <br>
+   Then can specificy border-left: width style color
+ </div>
+
+<div class="padding"> <h3> Padding: Spacing Inside an element, between content and borders</h3> Shorthand: <br> <ul> <li> Padding: all sides </li> 
+  <li> Padding: vertical horizontal</li>
+<li> Padding: top horizontal bottom</li>
+  <li>Padding: top right bottom left (clock wise)</li> 
+  </ul>
+  </div>
+
+<div class="margin"> <h3>Margin: Spacing outside of the element</h3></div>
+
+<div class="display"> <h3> Display </h3> <ul> 
+  <li> <strong>Inline:</strong> Width and height are ignored. Margin & padding push elements away horizontally but not vertically</li>
+  <li><strong>Block:</strong> Break the flow, place subsequent elements on the next line. width, height, padding, margin are respected </li>
+  <li><strong>Inline-block: </strong> Behaves like an inline element, except width, height, padding, margin are respected</li>
+  <li><strong>None:</strong> Element is present on the page, but not seen. </li>
+  </ul>
+</div>
+
+<div class="units"> <h2> CSS Units </h2>
+  <ul> <li>Percentage: <ul> <li> Width/height: set to a &#37; of the parent. </li> <li> Line-height: set to a &#37; of the element's font </li> </ul> </li>
+  <li>EM:</li>
+  <li>REM:</li>
+  <li></li>
+  <li></li>
+  <li></li></ul>
+  </div>
+

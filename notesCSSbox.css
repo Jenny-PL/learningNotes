@@ -1,0 +1,94 @@
+.borders {
+    width: 80%;
+    border: 5px solid green;
+    border-left:10px inset pink;
+    margin-left: 80px;
+    
+  }
+  
+  h1
+  {
+    border: 4px hidden black;
+    border-bottom: solid;
+    padding: 30px;
+    padding-left: 100px;
+  }
+  
+  .padding {
+    padding: 0 50px;
+    border: 15px solid black;
+    border-top: hidden;
+    border-bottom: hidden;
+  }
+  
+  .margin {
+    padding: 20px 120px;
+    border: 5px solid darkblue;
+    margin: 25px 50px;
+  }
+  
+  .display
+  {
+    border: 5px inset purple;
+  }
+  
+  h3 {
+    padding-left: 15px;
+    text-decoration: underline;
+  }
+  
+  .units {
+    border: 5px solid yellow;
+    margin-top: 15px;
+  }
+  
+  #static
+  {
+    color: rgb(200,0,250);
+  }
+  #relative {
+    position: relative;
+    bottom: 15px;
+    left: 30px;
+    width: 200px;
+    border:solid;
+    background-color: rgba(200,0,200,.3);
+  }
+  
+  #absolute {
+    margin: 40px;
+    border:solid;
+    padding: 15px;
+    position: absolute;
+    opacity: 0.6;
+    background-color: lightblue;
+  }
+  
+  #position {
+    border: solid;
+    border-bottom: hidden;
+    padding: 50px;
+    margin: 10px;
+    margin-bottom: 180px;
+    position: relative;
+    left: 10px;
+    bottom: 20px;
+    border-radius: 15%;
+  
+  }
+  
+  #fixed {
+    position: fixed;
+    top: 0px;
+    left:70px;
+    height: 40px;
+    border: solid;
+    background-color: rgba(0,153,255,0.4)
+  }
+  
+  #sticky {
+    border: solid;
+    background-color: rgba(255, 255, 102, 0.7);
+    position: sticky;
+    top: 40px;
+  }
