@@ -1,0 +1,138 @@
+<h1> Python </h1>
+
+<div id="data"> <h2>Data types </h2>
+<p> Date types: bool (True, False), int (integer), float (# with decimal), str (strings), range, list (similar to arrays- but not a fixed size), tuple (example: x,y or coordinates) , dict (dictionary- can store any key with any value), set (a collection of values without duplicates)</p>
+</div>
+
+<div id="random">
+<h3>Random tid bits</h3>
+<ul>
+<li>Indentation matters</li>
+<li>Capitalize True, False bools</li>
+  <li><strong>parameters </strong> are variables used to refer to pieces of data provided as input to a function (defined in the function signature) </li>
+  <li><strong>arguments </strong> are those pieces of data passed to the function when it gets called (specific values given to the function when it's invoked)</li>
+  <li><strong> docstring: </strong> multi-line comment that can be within a function, module, etc, to give more info (tells input and output)</li> 
+    <ul> 
+      <li>''' 3 single or double quotations mark start and end of docstring</li>
+      <li> Must be the first line of the function <li>
+      <li> A docstring can be called up using: </li>
+      <li> print(function_name.__doc__)</li>
+      <li> two underscores before and after doc </li>
+   </ul>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+</ul>
+</div>
+
+<div id="strings">
+<h3> Strings </h3>
+<ul>
+<li> Concatenation</li>
+  <li>Slicing: </li>
+ <ul> 
+ <li> L to R: 0 to end length (ie- Python: 0 to 5, where word length is 6)</li>
+   <ul>
+   <li> name = tommy <br> name [2:4] = 'mm'<br> The range is from first spot to last, not inclusive</li>
+     </ul>
+   <li> R to L: -1 to first letter (ie- Python is -1 to -6, from N to P)</li>
+   <ul>
+   <li></li>
+     </ul>
+   <li> This is because -0 is also 0, so the last letter must instead be -1.</li>
+   <li> 
+string[i:j:k] inlcudes range from i to k, not inclusive, and excludes j. </li>
+   <ul>
+     <li>name = timothy </li>
+   <li> name[0:2:4] = 'tio'</li>
+   </ul>
+   <li> <strong> len() </strong> will return string length. (ie- len(python) = 6)</li>
+   <li> <strong> Indexing: </strong> string[i], will return one selected character from string </li>
+  </ul>
+<li>String interpolation <br> is subbing a value from a variable into a string</li>
+  <ul> <li>print(f"{state_name1.capitalize()} is a nice place to live") <br> state_name is the variable <br> capitablize() is the method <br>method is a function for a specific class.</li>
+  <li>f is for format</li>
+  <li>The value to be interpolated is placed within curly braces {},</li></ul>
+<li></li>
+<li></li>
+  </ul>
+</div>
+
+<div id="loops">
+<h2> Loops </h2>
+<ul>
+<li> While loops</li>
+<ul>
+<li>i = 0 </br>
+  while i < 3: </br>
+      print("hello, world") </br>
+  i += 1</li>
+<li></li>
+<li></li>
+<li></li>
+  </ul>
+  </ul>
+<ul>
+<li> For loops</li>
+<ul>
+  <li>for i in range(3): </br>
+  print("hello, world")</li>
+  <li> This will print 3x, as range is 0,1,2</li>
+  <li></li>
+  <li></li>
+  </ul>
+  </ul>
+<ul>
+<li> Do-While loops</li>
+<ul>
+<li></li>
+  </ul>
+  </ul>
+</div>
+
+<div id ="functions">
+<h2> Functions</h2>
+<p> Take an argument as input, and return a value as output. </p>
+  <h4> Common functions </h4>
+  <ul>
+    <li>type takes an argument, and returns the data type as output.
+</li>
+    <li>bool takes data, returns the boolean True or False.</li>
+  <li>str converts data to the string class.</li>
+  <li>int converts data to the integer class.</li>
+  <li>float converts data to the float class</li>
+  <li>abs returns the absolute value of the value</li>
+  <li>round returns the value rounded to the nearest integer</li>
+  <li>input accepts user input</li>
+    </ul>
+  <h4>Making (aka Defining) Functions</h4>
+  <ul>
+    <li> def greet_jenny(): </br>
+   print("Hi, Jenny")</li>
+<li>To use the function, you <strong> call (or invoke) </strong> it: </br>
+greet_jenny()</li>
+  <li></li>
+  <li></li>
+    </ul>
+</div>
+
+<div id="modules">
+  <h2>Modules (often called libraries)</h2>
+  <ul>
+    <li> Examples: math, random</li>
+  <li>You must import the module <br> <strong>
+    import module_name </strong> </li>
+    <li> To use the functions: </br> <strong>
+  module_name.function_name </strong> </li>
+<ul>
+  <li> import random </li>
+  <li> random.randint(a,b) </li>
+  <ul><li> Returns a random integer N such that a &lt;= N &lt;= b </li>  </ul>
+  <li>random.random()</li>
+  <ul> <li>returns a random floating point number in the range [0.0, 1.0).</li> </ul>
+  </ul>
+  <li></li>
+  <li></li>
+    </ul>
+</div>
