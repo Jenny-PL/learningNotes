@@ -1,0 +1,133 @@
+<h1> Learning CSS now! </h1>
+
+<div> 
+<h2> Options for CSS location: </h2>
+<ol>
+  <li> Inline. within actual html tag, using style= "color:red;" </li>
+  <li> Internal: Within <b> style </b> tag placed inside <b> head </b> element. </li>
+<li>
+External: Within separate css folder, linked in the head section using: &lt;link rel="stylesheet" href="mystyles.css" &gt; 
+  <ul>
+    <li> This is the most common and prefered! </li>
+  </ul>
+  </li>
+</ol>
+</div>
+
+<div id="principals">
+<h2>General Principals</h2>
+
+  <h3> Order matters! </h3> The last declared CSS style for an element will be the style that trumps... in the case that the same element is given two conflicting colors, for example
+   <h3> Specificity </h3> 
+  <p> <a href="https://specificity.keegan.st/"> Specificity calculator </a> Different selectors get different weights. In general, when there is a conflict: 
+    <ol>  <li> ID selectors: WINS </li> 
+      <li> Class, attribute, pseudo-class selectors </li>
+    <li> Element, pseudo-element selectors: LOSES </li>
+      </ol>
+    • !important: this can go after a style and will make it over-ride the other CSS styles. It should not be used, unless there are very specific curcumstances. Ex: p {color: blue !important;} 
+    </p>
+<h3> Tools: Developer tools in chrome </h3>
+<p> Look at <strong> styles </strong> section to see your CSS code, change the styles to view diff options, see all competing styles on a selector, etc...  If you change the color, font, etc, it does not change it in your folders, just in your temporary view (deleted upon refesh of page)</p>
+</div>
+
+<div id="selectors">
+<h2> Selectors </h2>
+<ol> 
+  <li> <h4> Elements </h4>(ie- h1, p, li, a, span, div, etc..) </li>
+  <li> <h4>Class (label multiple elements together to style the same). </h4> <br> <span style= "background-color: yellow"> TIP: hold option to get multiple cursers and label them all at once. </span><br> <span class="demo"> To utilize: .name { color:----;} </span> </li>
+  <li>  <h4>IDs (# that are referred to in the html; ie- to style one specific button </h4> <span class="demo"> To utilize: #name { color:----;} </span></li>
+  <li> <h4> Descendent selector </h4> Use a space between names of elements to include all of a specific element nested within another <span class="demo"> (ie- li a {color: blue}; </span> This means all anchor tags <strong> within </strong> a list element) </li>
+   
+  <li> <h4> Adjacent selectors: <span class="demo"> h2 + button {color: blue;} </span> </h4> This means any <strong> button </strong> that comes after an h2 will be blue  </li>
+  
+  <li> <h4> Direct Descendent/child: <span class="demo"> footer &gt;a {color: purple;} </span> </h4> This means that any anchor tag that is a direct descendent (not right after necessarily, but just one level down... not nested within something else) of an footer will be purple </li>
+  
+  <li> <h4> Attribute selector: <span class="demo"> input[type="text"] {color: blue;} </span> </h4>  This specifies a certain attribute of an element for styling.</li>
+  <ul> <li>  <label> Input example </label> <input type="text" placeholder="your name">
+    </li>
+  </ul>
+ 
+  <li> <h4> Psuedo class <span class="demo"> a:hover {background-color: light purple;} </span> </h4> 
+  <ul>
+    <li id="hover"> <strong> Hover: </strong> change size, background color, text color, etc when a button, link, text, picture is hoevered over. </li>
+    <li><strong> Active: </strong> Change an attribute when an element is activated (ie- anchor tag is clicked on) </li>
+    <li> <strong> nth-of-type(3n):</strong> This will make every 3rd of an element affected.  Alternately, nth-of-type(3) would make only the 3rd of an element be affected.  nth-of-type(2n+1) means every other, starting with 1 (1st of an element), while nth-of-type(2n) means every other, so it will start with the 2nd element. </li>
+    </ul>
+  </li>
+  
+  <li><h4> Psuedo element <span class="demo"> h2::first letter { font-size: 30px;} </span> </h4> Can choose first letter, first line, selected element, before, after, etc</li>
+</ol>
+</div>
+
+<div id="colors">
+<h3> Color (a text attribute)</h3>
+<p>
+element {color: #11999e;}
+  p {color: rgb (_,_,_);}
+<ul> 
+  <li>
+    Colors are a mix of red, green, blue on scale from 0 to 255.  color: rgb (255,255,255) is white. color: rgb (0,0,0) is black. Use a <a href="https://htmlcolorcodes.com/color-picker/"> color picker </a> to find color mixes and complementary colors/palettes. </li>
+<li> hexadecimal: 0123456789ABCDEF (aka 0 to 15. F=15, making a two-digit # into 1 digit) 0 to ff is equal to 0 to 255. uses red-blue-green mixes.</li>
+  <li> <a href="http://www.colorhunt.co"> colorhunt.co </a> for nice color palettes </li>
+  <li> <a href="https://coolors.co/palettes/trending"> Coolor.co </a> Another color palette site </li>
+</ul>
+  
+</p>
+</div>
+
+<div>
+<h3> Alpha & opacity </h3>
+<p> <div class="alpha"> <strong>Alpha: </strong> used with rgba (0,250,140,0.4) as a fourth digit, that gives a specifically selected item a level of oppacity. 1= not at  (Can aslo be used with hexadecimal, adding two extra digits/letters, 0 to F, at end to specify opacity)</div>
+<div class= "opacity"> <strong> Opacity: </strong> relates to the entire element, not just one selected item (ie- background color, text color, images, etc). <img src="http://farm9.staticflickr.com/8388/8602861197_4d689ee408_z.jpg" id="blendcycle" description of image="kid riding blendercycle"> </div>
+</p>  
+</div>
+
+<div id="font">
+<h3> Font Weight  &amp; Size </h3>
+<p> <ul>
+  <li> <strong> Weight: </strong> 400=normal, 700=bold (range of 0-1000, inclusive) </li>
+  <li> <strong> Size: </strong> font-size:__;  
+    <ul>
+      <li> <strong> Relative </strong> (small, medium large, em, rem, etc.): </li>
+      <li> <em> Em: </em> Realtive to the element's default size (this is not a constant default within the document). Ie- h1, h2, p all have different default sizes.  So 1em may be a different value (#px) for each element.</li>
+      <li> <em>  Rem (root em): </em> relative size, compared with a constant default within the document <em> (set how?) </em> (ie- 16px =1em, so 1.5em is 24px.) </li>
+      <li> <strong> Absolute (px, etc...) </strong> </li>
+    </ul>
+  </li>
+</ul>
+</p>
+<h3 style="font-family: Andale Mono;"> Font Family </h3>
+<p>
+<ul> 
+  <li style="font-family: "Avant garde", impact;" > Font-family: ____; </li>
+  <li > <strong> Font stack: </strong> lists font options.  If one font is not available, the next best choice is listed next, separated by commas.  (Ex: Font-family: Avant garde, impact, <strong> san-serif </strong>;) </li> 
+  <ul> <li> <strong> San-serif </strong> above is a generic family name, thus requesting any font within that family </li> </ul>
+  <li>
+<a href="https://www.cssfontstack.com/"> Commonly supported fonts on Macs and Windows </a>    
+  </li>
+  <li> <a href="https://fonts.google.com/"> Google fonts </a>: Can download fonts to use in project. Copy code and paste into 'head' of HTML doc</li>
+  <li> <strong> NOTE: </strong> Use quotations if there is a space or a character other than - within the name. Ie: "Gills Sans", sans-serif, cursive </li>
+</ul>
+</p>
+</div>
+
+<div>
+<h3 style="text-decoration:wavy aqua underline"> Text decoration </h3>
+<p> 
+  This is to add over,under or strike-through lines. Or to remove lines, such as remove automatic hyperlink. 
+  <ul>
+    <li> <a href="www.google.com"> Click here to search </a>
+    <li> Example: "a {text-decoration: none;}" ) </li>
+</ul>
+</p>
+<h3>Line height & Letter Spacing</h3>
+<p> 
+  <ul>
+    <li>Line height: This is the height of the line for the text of an element. ex: you can make a paragraph double spaced (or 4x)...</li>
+    <li style="letter-spacing: 10px"> Letter spacing: space between letters </li>
+</ul>
+    </p>
+
+<h3> Text-transform: capitilize/lowercase/uppercase </h3>
+<p> <div style="text-transform: uppercase"> Change text to have each letter of start of word... </div> capitilized, or all text lower/uppercase </p>
+</div>

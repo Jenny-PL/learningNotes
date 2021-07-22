@@ -1,0 +1,100 @@
+/* Notes to self */
+div {
+    background-color:#FFF5DE;
+    padding: 20px;
+    margin: 10px;
+    border: solid;
+  }
+  
+  h1 {color: #3C5186;
+    text-align: center;
+    font-weight: 300;
+    letter-spacing: 5px;
+   }
+  
+  h2 {font-family: cursive;}
+  /* cursive is a generic family name vs. a specific font family name */
+  
+  a {text-decoration: none;}  
+  a:hover {background-color: lightgreen;}
+  
+  
+  p {
+    line-height:1;
+    font-size: 16px;
+  }
+  
+  h2,h3 {
+    text-decoration: underline;
+  }
+  
+  /* Example of pseudo elements */
+  h2, h3::first-letter {
+    font-size:35px;
+  }
+  
+  /*This applies it to the whole document, as I haven't specified an element */
+  ::selection {background-color: #fec5bb;}
+  
+  /*psuedo-class example: change size when heading is hovered over */
+  /*   h2,h3,h4:hover {
+    font-size: 10px;
+  }
+  
+  
+  /* This is pretty obnoxious, but an example of the after psuedo element  */
+  li::after {
+    content: "☆";
+  }
+  */
+  
+  #hover {
+    border-radius: 0;
+    transition: border-radius 5s 3s, background-color 2s;
+  }
+  
+  #hover:hover {
+    background-color: rgba(50,150,150,.75);
+    border-radius: 25%
+  }
+  
+  .demo {
+    color:#e63946;
+    background-color:#a8dadc;
+  }
+  
+  h2,h3,h4 { 
+    margin-bottom: 0px;
+  }
+  
+  input[type="text"] {
+    color: magenta;
+  }
+  
+  /* ul li:nth-of-type(2n) { background-color: yellow;} */
+  
+  .alphaopacity
+  {
+    color: rgba(250,0,140,0.4);
+    width:80%;
+    height: 100px;
+    background-color: white;
+    border: solid;
+    margin: 10px;
+  }
+  
+  .opacity {
+    height: 90px;
+    background-color: blue;
+    color: rgb(0,250,140);
+    border: solid;
+    border-color: black;
+    padding: 30px;
+    opacity: .5;
+  }
+  
+  #blendcycle {
+    height: 80px;
+    display: block;
+    padding-left: 30%;
+  }
