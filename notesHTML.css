@@ -1,0 +1,18 @@
+p {
+    color: #52006A; 
+    background-color:lightgrey;
+  }
+  
+  div {
+    background-color: #B8DFD8;
+    padding: 15px;
+    margin: 15px;
+    border:solid;
+    border-width:2px;
+    border-radius: 10%;
+  }
+  
+  text {
+    color: #52006A;
+  }
+  

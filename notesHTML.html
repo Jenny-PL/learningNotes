@@ -1,0 +1,190 @@
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">   
+  <title>The title on Tab for webpage </title>
+</head>
+-->
+  
+<!-- Boilerplate: skeleton on each html doc. Needs 1 head, which is all 'metadata'-- not actually seen in document, the head has a title, which is seen on the website tab; and 1 body, which has all the stuff on the webpage -->
+
+<!-- UTF-8 is important as it includes characters from other languages... unicode -->
+  
+<body>
+    <div>
+   <h1> Main Heading. You can only have one. </h1>
+   <h2>Heading 2: HTML</h2>
+     <p> <a href="https://html.spec.whatwg.org/"> HTML living standards </a> Up to date info about how html should be used </p>
+   <h3>Heading level 3: Resources</h3>
+      <p> <a href="https://web.stanford.edu/group/csp/cs21/htmlcheatsheet.pdf"> HTML basics cheatsheet </a>
+   <h4>Heading level 4</h4>
+   <h5>Heading level 5</h5>
+   <h6>Heading level 6</h6>
+   <!-- There are only 6 headings types.  Use based on content/themse, not on size -->
+     </div>
+     <!-- Div: the content division element.  Allows you to group content together... useful later with CSS styling -->
+   <p> This is how to make a paragraph </p>
+   
+   
+   <!-- Self closing tags -->
+   <hr> <!-- This is supposed to be used based on a separation of theme rather than for style (where you should use CSS). -->
+   <hr size="4" color="dark pink" width="50%">
+   Break <br> is also self closing.
+   
+     <div>
+   <h2 id="Format"> Formatting Text </h2>
+   <!-- id added above to h2 allows for an anchor to click and return to this point later -->
+   <center> To make text go in the center </center>
+   <b> BOLD </b> OR <strong> Strong. </strong> Strong is for emphasis/meaning, while bold is to label a keyword (ie- company name, person's name)  <br> <br> 
+   <i> italics </i> OR <em> emphasis </em>. Emphasis is to add emphasis, while italics is to mark an alternative text (ie- book title, person's thoughts, foreign language)<br> <br>
+   <u> underlined </u> OR <ins> insterted.</ins> Underline is ralely used, may be used to denote spelling error that should be fixed, etc.  Inserted may be used for noting text that was ADDED. Also, rarely used.  (Best to use 'text decoration' in CSS for underline (?)<br> <br>
+   Here is some superscript <sup> example </sup> <br>
+   And some subscript <sub> example2 </sub> <br>
+   <del> Not sure when I'd use this, it's prettu ugly </del> 
+     </div>
+       <br>
+   
+   
+   <hr>
+     <div>
+   <h2> Forms </h2>
+   <form>
+       <input type= "text" placeholder="enter stuff here">
+       <input type="number" placeholder="type number" required>
+     <!-- placeholder is optional. gives user an idea of what you want as input.  Required will make it such that you can't submit a form without filling it out. -->
+     <p> <em> <strong> Action </strong> </em> attribute tells the form <strong> where </strong> to send the information.
+       <br>
+     
+       <p> Age. Over 18? <input type="radio" name="Age" Value="ov18"> 
+           Age. Under 18? <input type="radio" name="Age" Value="un18" checked>
+   <!-- Adding checked makes it marked by default -->
+         <label for="Over 65"> Age. Over 65? <input id="Over 65" type="radio" name="Age" Value="ov65"> </label>
+         <!-- With radio type, you are given options and can choose only one, items are linked into a group of options via their name. Value allows info to be stored for later use.  *It is best practice to use labels and match it to an input ID (see last example).  -->
+     </p>
+     <hr>
+     <p> To give a list of options, use select. <br>
+       Favorite food:
+       <select>
+         <option> pizza </option>
+         <option> cookies </option>
+         <option> burritos </option>
+         <option> salad </option>
+         <option selected> Fruit <option>
+       </select>
+     </p>
+     <br>
+     <p>
+       <input type="submit"> <br>
+       <input type="submit" value="I'm done. Exit this page"> <br>
+       A simpler, better way to do this is to use the <strong> button </strong> form:
+       <button> submit </button> <br>
+       <button> Click here, please </button>
+     </p>
+   </form>
+     </div>
+   
+    <div id="tables">
+   <h2> Tables </h2>
+     <caption> Family Members with ages and hobbies </caption>
+     <!--caption can be helpful for web accessibility-->
+     <table>
+       <thead> 
+           <tr>
+             <th> Name </th>
+             <th> Age </th>
+             <th> Favorite Activity </th>
+         </tr>
+       </thead>
+    <!-- Tables are broken into head and body. within each row, tr (table row) there is td (table data). th = table head -->   
+       <tbody>
+           <tr>
+             <td> Jenny </td>
+             <td> 33 </td>
+             <td> Family time </td>
+           </tr>
+         <tr>
+             <td> Richard </td>
+             <td> 33 </td>
+             <td> Bikes </td>
+           </tr>
+       </tbody>
+   </table>
+      </div>
+   <hr>
+     <div id="images">
+     <h2> Images </h2>
+     <img src="name.jpg" alt="description of image" width="" align="">
+     <!-- alt atribute is read by screen readers, for accessibility purposes -->
+   <!-- "command + /" will bring up comment brackets -->
+     <br>
+     <!-- copy image web address and paste in as the source, or use a file from computer (must be in same folder as current webpage, else make sure you have the correct file path) -->
+     <a href="https://www.w3schools.com/html/html_filepaths.asp"> html file paths </a>
+     <br />
+     <a href="https://crop-circle.imageonline.co/"> cool tool to crop pictures with a circle </a>
+     </div>
+   <hr>
+       
+    <div id="link">
+   <h2> Links: the anchor tag &lt; a &gt; </h2>
+     <p> <b> href </b> is an attribute within the a tag </p>
+   <h3> Absolute link: An Outside Website </h3>
+     <p> <a href="http://www.google.com"> Click here for google.com </a   </p>
+      
+       <h3> Anchor link: </h3>
+         <h4> Return to a spot within your own page </h4>
+       <p> <a href="#Format"> Click here to return to formatting   section. </a> </p>
+       </div>
+       
+       <div>
+       <h2> HTML entities: characters </h2>
+       <p> &lt; or &gt; Or other characters, such as &dollar; or &cent; and &amp; or &#9824; can be looked up easily online. Here's a link: <a href="https://www.w3schools.com/html/html_entities.asp"> html entities (3wschools) </a> </p>
+      </div>
+       <div>
+       <h2> Iframes: embeding another website's data </h2>
+       </div>
+      
+      <div>
+       <p>
+     <h2> Using emojis </h2>
+     command + control + space bar brings up options <br>
+     ✆☎︎☞⭐︎☆♥️✅🚗🥂🍓🌳👍🏽 <br>
+     <a href="https://emojipedia.org/"> Emojipedia </a>
+     </p>
+       </div>
+     <div>
+     <h2> Keyboard Shortcuts</h2>
+     <ul> 
+       <li> <strong>search: </strong> command + spacebar </li>
+       <li> <strong> Screenshot of part of a page:</strong> command + shift+ 4 </li>
+       <li> <strong> Screenreader:</strong> command + F5 </li>
+     </ul>
+     </div>
+     
+     <div>
+     <h2> Using text editors </h2>
+     <ul>
+       <li> Atom </li>
+       <ul>
+         <li> <a href="https://github.com/nwinkler/atom-keyboard-shortcuts"> List of atom keyboard shortcuts </a> </li>
+         <li> Beautify: control + option+ B </li>
+         <li> Command Palette: command + shift + P </li>
+         <li> Emmett cheasheet appears to work within Atom as well
+           <p> ie: ul>li*5 will create a list of 5 items </p></li>
+       </ul>
+         <li> VSCode</li>
+       <ul>
+         <li> <a href="https://docs.emmet.io/cheat-sheet/"> Emmett cheatsheet </a> </li>
+         <li> Copy element: shift option down/up (to copy the same element, ie- list) </li>
+         <li> </li>
+       </ul>
+           <li> Brackets </li>
+       <ul> 
+         <li> </li>
+         <li> </li>
+       </ul>
+     </ul>
+     </div>
+     
+   </body>
+   </html>
